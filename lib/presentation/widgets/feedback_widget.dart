@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:snagging/presentation/widgets/text.dart';
 
-import '../resources/colors_managers.dart';
+
 import '../resources/image_assets.dart';
 import 'custom_text.dart';
 

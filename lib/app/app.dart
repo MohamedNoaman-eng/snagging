@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:snagging/presentation/root_screen/root_screen.dart';
-import 'package:snagging/presentation/s.dart';
+
 
 
 import '../presentation/home/home_screen.dart';

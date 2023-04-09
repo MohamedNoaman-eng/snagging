@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_tabler_icons/flutter_tabler_icons.dart';
+
 import 'package:snagging/bloc/home/home_cubit.dart';
 import 'package:snagging/presentation/widgets/text.dart';
 
 import '../resources/colors_managers.dart';
-import '../resources/image_assets.dart';
+
 import 'custom_text.dart';
 
 class BuildPackageWidget extends StatelessWidget {

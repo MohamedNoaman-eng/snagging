@@ -141,8 +141,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:snagging/bloc/home/home_cubit.dart';
+
 
 import 'package:snagging/presentation/resources/image_assets.dart';
 import 'package:page_transition/page_transition.dart';

@@ -5,16 +5,15 @@ import 'dart:ui';
 import 'package:device_info/device_info.dart';
 import 'package:flutter/material.dart';
 
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:snagging/app/constant.dart';
+
 import 'package:snagging/presentation/widgets/loading_item.dart';
 import 'dart:async';
-import 'package:flutter/material.dart';
+
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:flutter_downloader/flutter_downloader.dart';
-import 'package:path_provider/path_provider.dart';
+
 import 'package:permission_handler/permission_handler.dart';
-import 'package:url_launcher/url_launcher.dart';
+
 import 'package:webview_flutter/webview_flutter.dart';
 
 import 'download_helper_function.dart';
@@ -56,7 +55,7 @@ class _WebViewScreen2State extends State<WebViewScreen2> {
     DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
     AndroidDeviceInfo androidInfo = await deviceInfo.androidInfo;
     if (platform == TargetPlatform.android &&
-        androidInfo.version.sdkInt! <= 28) {
+        androidInfo.version.sdkInt <= 28) {
       final status = await Permission.storage.status;
       // final status2 = await Permission.manageExternalStorage.status;
       if (status != PermissionStatus.granted) {

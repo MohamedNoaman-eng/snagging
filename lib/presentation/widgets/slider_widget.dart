@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:snagging/presentation/resources/image_assets.dart';
+
 import 'package:snagging/presentation/widgets/text.dart';
 
 import '../resources/colors_managers.dart';

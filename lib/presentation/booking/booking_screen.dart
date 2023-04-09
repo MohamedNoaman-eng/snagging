@@ -6,13 +6,13 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:snagging/app/constant.dart';
 import 'package:snagging/bloc/webview/webview_booking.dart';
 
-import 'package:snagging/presentation/widgets/loading_item.dart';
+
 import 'package:snagging/presentation/widgets/webview.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 
 import '../../bloc/webview/webview_state.dart';
-import '../widgets/alertDialog.dart';
+
 import '../widgets/build_app_bar.dart';
 
 
@@ -37,7 +37,7 @@ class _BookingScreenState extends State<BookingScreen> {
 
   @override
   Widget build(BuildContext context) {
-    var bloc  = context.read<WebViewBookingCubit>();
+
     return SafeArea(
       child: Scaffold(
         resizeToAvoidBottomInset: true,

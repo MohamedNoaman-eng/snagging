@@ -5,10 +5,7 @@ import 'package:snagging/bloc/home/home_cubit_states.dart';
 import 'package:snagging/presentation/booking/booking_screen.dart';
 import 'package:snagging/presentation/home/home_screen.dart';
 import 'package:snagging/presentation/login/login_screen.dart';
-import 'package:snagging/presentation/widgets/text.dart';
 
-import '../../bloc/webview/webview_booking.dart';
-import '../../bloc/webview/webview_login.dart';
 import '../resources/colors_managers.dart';
 import '../resources/image_assets.dart';
 import '../widgets/custom_text.dart';

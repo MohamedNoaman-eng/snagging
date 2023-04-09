@@ -7,18 +7,13 @@ import 'package:snagging/bloc/home/home_cubit_states.dart';
 import 'package:snagging/bloc/webview/webview_state.dart';
 import 'package:snagging/presentation/resources/colors_managers.dart';
 import 'package:snagging/presentation/resources/image_assets.dart';
-import 'package:snagging/presentation/resources/string_manager.dart';
-import 'package:snagging/presentation/resources/style_manager.dart';
 import 'package:snagging/presentation/widgets/alertDialog.dart';
 
 import 'package:snagging/presentation/widgets/carsouleSlider.dart';
-import 'package:snagging/presentation/widgets/circleImage.dart';
-import 'package:snagging/presentation/widgets/divider.dart';
 import 'package:snagging/presentation/widgets/feedback_item.dart';
 import 'package:snagging/presentation/widgets/loading_item.dart';
 import 'package:snagging/presentation/widgets/package_carsoul.dart';
 
-import 'package:snagging/presentation/widgets/text.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key? key}) : super(key: key);
@@ -34,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     // if failed,use refreshFailed()
   }
 
-  void _onLoading() async {}
+
 
   @override
   void initState() {

@@ -1,9 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:snagging/bloc/home/home_cubit.dart';
-import 'package:snagging/data/models/service_item.dart';
-import 'package:snagging/presentation/widgets/slider_widget.dart';
+
 
 import '../../data/models/testimonials_item.dart';
 import 'feedback_widget.dart';

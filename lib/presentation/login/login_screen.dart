@@ -7,12 +7,10 @@ import 'package:snagging/bloc/webview/webview_login.dart';
 import 'package:snagging/bloc/webview/webview_state.dart';
 import 'package:snagging/presentation/widgets/build_app_bar.dart';
 
-import 'package:snagging/presentation/widgets/loading_item.dart';
 import 'package:snagging/presentation/widgets/webview.dart';
 
 import 'package:webview_flutter/webview_flutter.dart';
 
-import '../widgets/alertDialog.dart';
 
 
 
@@ -36,7 +34,6 @@ class _LoginScreenState extends State<LoginScreen> {
   }
   @override
   Widget build(BuildContext context) {
-    var bloc  = context.read<WebViewLoginCubit>();
     return SafeArea(
       child: Scaffold(
         key: _scaffoldKey,
