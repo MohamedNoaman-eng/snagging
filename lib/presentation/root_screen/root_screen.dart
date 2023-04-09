@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:snagging/bloc/home/home_cubit.dart';
 import 'package:snagging/bloc/home/home_cubit_states.dart';
-import 'package:snagging/presentation/booking/booking_screen.dart';
-import 'package:snagging/presentation/home/home_screen.dart';
-import 'package:snagging/presentation/login/login_screen.dart';
+
 
 import '../resources/colors_managers.dart';
 import '../resources/image_assets.dart';
@@ -20,7 +18,6 @@ class RootScreen extends StatefulWidget {
 class _RootScreenState extends State<RootScreen> {
 
 
-  List<Widget> pages = [LoginScreen(), HomeScreen(), BookingScreen()];
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +31,7 @@ class _RootScreenState extends State<RootScreen> {
               child: Stack(
               alignment: Alignment.bottomCenter,
                   children: [
-                pages[bloc.pageIndex],
+                bloc.pages[bloc.pageIndex],
                 LayoutBuilder(
                   builder: (context, cons) => Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(

@@ -15,10 +15,15 @@ import 'package:snagging/network/remote/api_services.dart';
 import 'package:snagging/presentation/resources/image_assets.dart';
 
 import '../../data/models/package.dart';
+import '../../presentation/booking/booking_screen.dart';
+import '../../presentation/home/home_screen.dart';
+import '../../presentation/login/login_screen.dart';
 import '../../presentation/widgets/alertDialog.dart';
 
 
 class HomePageCubit extends Cubit<HomeCubitStates>{
+  List<Widget> pages = [LoginScreen(), HomeScreen(), BookingScreen()];
+
   HomePageCubit(): super(InitialHomeState());
   int pageIndex = 1;
   void changePageIndex(index){

@@ -141,12 +141,12 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-
+import 'package:snagging/presentation/home/home_screen.dart';
 
 import 'package:snagging/presentation/resources/image_assets.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:snagging/presentation/root_screen/root_screen.dart';
-import 'package:snagging/presentation/s.dart';
+
 
 
 
@@ -207,7 +207,7 @@ class _SplashScreenState extends State<SplashScreen> {
               splashIconSize: cons.maxWidth *0.15,
               splashTransition: SplashTransition.fadeTransition,
               animationDuration: const Duration(seconds: 1),
-              nextScreen: TestScreen(),
+              nextScreen: HomeScreen(),
             ),
 
             AnimatedPositioned(

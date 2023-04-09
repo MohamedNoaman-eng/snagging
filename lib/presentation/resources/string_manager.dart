@@ -8,7 +8,7 @@ class AppString{
   static const onBoardingTitle3 = "SEE THE BEST COURSE #3";
   static const onBoardingTitle4 = "SEE THE BEST COURSE #4";
   static const skip = "Skip";
-  static const internetConnection = "No Internet Connection";
+  static const internetConnection = "No Internet Connection!";
 
   static const onBoardingSubTitle1 =
       "Tut app is an awesome flutter application using clean architecture #1";

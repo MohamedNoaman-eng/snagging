@@ -18,17 +18,17 @@ import 'package:webview_flutter/webview_flutter.dart';
 
 import 'download_helper_function.dart';
 
-class WebViewScreen2 extends StatefulWidget {
-  final String title;
+class WebViewWidget extends StatefulWidget {
+
   final String url;
 
-  WebViewScreen2({required this.url, required this.title});
+  WebViewWidget({required this.url});
 
   @override
-  State<WebViewScreen2> createState() => _WebViewScreen2State();
+  State<WebViewWidget> createState() => _WebViewWidgetState();
 }
 
-class _WebViewScreen2State extends State<WebViewScreen2> {
+class _WebViewWidgetState extends State<WebViewWidget> {
   int index = 0;
   double webProgress = 0;
   late InAppWebViewController controller;
@@ -94,25 +94,12 @@ class _WebViewScreen2State extends State<WebViewScreen2> {
       },
       child: Stack(
         children: [
-          // WebView(
-          //   navigationDelegate: (NavigationRequest request) {
-          //     return NavigationDecision.navigate;
-          //   },
-          //   initialUrl: widget.url,
-          //   javascriptMode: JavascriptMode.unrestricted,
-          //   onWebViewCreated: (WebViewController controller) {
-          //     _webViewController = controller;
-          //   },
-          //   onProgress: (progress) {
-          //     setState(() {
-          //       webProgress = progress / 100;
-          //     });
-          //   },
-          // ),
+
+
           InAppWebView(
             initialUrlRequest: URLRequest(url: Uri.parse(widget.url)),
-            onWebViewCreated: (InAppWebViewController conr) {
-              controller = conr;
+            onWebViewCreated: (InAppWebViewController cont) {
+              controller = cont;
             },
             onProgressChanged:
                 (InAppWebViewController controller, int progress) {
@@ -124,15 +111,6 @@ class _WebViewScreen2State extends State<WebViewScreen2> {
             initialOptions: InAppWebViewGroupOptions(
               crossPlatform: InAppWebViewOptions(useOnDownloadStart: true),
             ),
-            // onDownloadStart: (controller, url,) async {
-            //   print("onDownloadStart $url");
-            //   final taskId = await FlutterDownloader.enqueue(
-            //     url: Uri.parse("uri") as String,
-            //     savedDir: (await getExternalStorageDirectory())!.path,
-            //     showNotification: true, // show download progress in status bar (for Android)
-            //     openFileFromNotification: true, // click on notification to open downloaded file (for Android)
-            //   );
-            // },
             onDownloadStartRequest: (controller, DownloadStartRequest request) async {
               //todo download catelog here
               FlutterDownloader.registerCallback(downloadCallback);
